@@ -3,5 +3,7 @@
 const input = document.querySelector('.data-section-input');
 const sendData = () => {
   const data = input.value.trim();
-  return sendRequest(`/search?${data}`, () => data);
+  sendRequest(`/search?${data}`, () => JSON.parse(data));
 };
+
+input.oninput = sendData

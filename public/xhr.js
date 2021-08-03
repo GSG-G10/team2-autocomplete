@@ -5,11 +5,9 @@ const sendRequest = (url, cb) => {
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
       if (xhr.status === 200) {
-        cb(JSON.stringify(response.text));
-        end();
-      } else {
-        end();
+        
       }
+
     }
   };
   xhr.open('GET', url);
