@@ -7,10 +7,11 @@
     "test": "test"
   },
   "dependencies": {
-    "env2": "^2.2.2",
-    "eslint": "^7.32.0"
+    "cities.json": "file:names/cities.json",
+    "env2": "^2.2.2"
   },
   "devDependencies": {
+    "eslint": "^7.32.0",
     "jest": "^27.0.6",
     "nodemon": "^2.0.12",
     "supertest": "^6.1.4"
