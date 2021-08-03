@@ -19,14 +19,23 @@
     <main class="main">
       <div class="container main-container">
         <section class="data-section">
-          <input type="text" class="data-section-input" placeholder="Enter Name You want to search">
+          <input
+            oninput = "sendData()"
+            type="text"
+            class="data-section-input"
+            placeholder="Enter Name You want to search"
+            
+          />
           <button class="deta-section-submit" type="submit" onclick=""></button>
         </section>
       </div>
       <section class="gallery-section">
+        
         <!-- Here The result will show here -->
       </section>
     </main>
     <script src="./index.js"></script>
+    <script src="./xhr.js"></script>
+    <script src="dom.js"></script>
   </body>
 </html>
