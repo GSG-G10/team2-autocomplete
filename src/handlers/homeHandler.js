@@ -1,5 +1,4 @@
-const { dir } = require('console');
-const fs= require('fs')
+const fs = require('fs')
 const path = require('path')
 
 const homeHandler = (req, res) => {
@@ -15,3 +14,6 @@ const homeHandler = (req, res) => {
     }
     });
 }
+
+
+module.exports = homeHandler;
