@@ -1,4 +1,4 @@
-const autocompleteHandler = require('./handlers/autoCompleteHandler');
+const autocompleteHandler = require('./handlers/autocompleteHandler');
 const publicHandler = require('./handlers/publicHandler');
 const homeHandler = require('./handlers/homeHandler');
 
