@@ -19,7 +19,7 @@ const handleSearch = async (req,res) => {
         else {
             const jsonData = JSON.parse(data.toString('utf-8'));
             
-            searchText = searchText.charAt(0).toUpperCase() + searchText.slice(1);
+          //  searchText = searchText.charAt(0).toUpperCase() + searchText.slice(1);
 
             const newArr = jsonData.filter((item) => 
                 item.name.startsWith(searchText)
