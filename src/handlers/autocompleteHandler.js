@@ -24,11 +24,3 @@ const autocompleteHandler = (req, res) => {
 };
 
 module.exports = autocompleteHandler;
-/// ///
-// let searchText = endpoint.split('?')[1];
-// const jsonData = JSON.parse(data.toString('utf-8'));
-// searchText = searchText.charAt(0).toUpperCase() + searchText.slice(1);
-// const searchResult = jsonData.filter((item) => item.name.startsWith(searchText));
-// const size = 30;
-// const topResults = searchResult.slice(0, size).filter((i, idx) => idx < size);
-// res.end(JSON.stringify(topResults));
