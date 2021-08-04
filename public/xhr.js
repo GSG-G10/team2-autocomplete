@@ -10,3 +10,5 @@ const sendRequest = (url, cb) => {
   xhr.open('GET', url);
   xhr.send();
 };
+
+module.exports = sendRequest;

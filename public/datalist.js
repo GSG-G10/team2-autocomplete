@@ -1,6 +1,5 @@
 const headerTtitle = document.querySelector('.header-title');
 const dataListSection = document.querySelector('#list');
-// eslint-disable-next-line no-unused-vars
 const createDataList = (data) => {
   url = `/search?${data}`;
   sendRequest(url, (data) => {
