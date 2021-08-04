@@ -1,16 +1,10 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
 const sendRequest = (url, cb) => {
   const xhr = new XMLHttpRequest();
   xhr.onreadystatechange = () => {
     if (xhr.readyState === 4) {
-      // eslint-disable-next-line no-empty
       if (xhr.status === 200) {
         cb(JSON.parse(xhr.responseText));
-      }else{
-        console.log('Error')
-      }
-
+      } else if (xhr.status === 404) xhr.responseText.status = 404;
     }
   };
   xhr.open('GET', url);
