@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const autocompleteHandler = require("./handlers/autocompleteHandler");
+const autocompleteHandler = require("./handlers/autoCompleteHandler");
 const publicHandler = require("./handlers/publicHandler");
 
 const router = (req, res) => {
