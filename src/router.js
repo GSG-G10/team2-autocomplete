@@ -1,6 +1,6 @@
 const fs = require("fs");
 const path = require("path");
-const searchHandler = require("./handlers/searchHandler");
+const autocompleteHandler = require("./handlers/autocompleteHandler");
 const publicHandler = require("./handlers/publicHandler");
 
 const router = (req, res) => {
@@ -18,7 +18,7 @@ const router = (req, res) => {
       }
     });
   } else if (endpoint.includes("search")) {
-    searchHandler(req, res);
+    autocompleteHandler(req, res);
   } else if (req.url.includes("public")) {
     publicHandler(req, res);
   } else {
