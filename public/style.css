@@ -23,7 +23,9 @@
   margin: auto;
 }
 body {
-  background-color: var(--main-text-color);
+  background: url('./jonathan-roger-LY1eyQMFeyo-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header {
   height: 30vh;
@@ -66,7 +68,8 @@ body {
   overflow: hidden;
 }
 .data-section-input {
-  background-color: var(--main-text-color);
+  
+  background:rgba(252, 252, 252, 0.534);
   width: 100%;
   height: 100%;
   border: none;
@@ -82,8 +85,7 @@ body {
   background-color: var(--main-text-color);
 }
 .events-section{
-  margin-bottom: 500px;
-  min-height: 900px;
+  
 }
 .events-container{
   display:flex;
