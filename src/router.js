@@ -2,7 +2,6 @@ const fs = require("fs");
 const path = require("path");
 const searchHandler = require("./handlers/searchHandler");
 const publicHandler = require("./handlers/publicHandler");
-
 const router = (req, res) => {
   const endpoint = req.url;
   if (endpoint === "/") {

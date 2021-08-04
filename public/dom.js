@@ -2,8 +2,7 @@
 /* eslint-disable no-unused-vars */
 const input = document.querySelector('.data-section-input');
 const sendData = () => {
-  const data = input.value.trim();
-  sendRequest(`/search?${data}`, () => JSON.parse(data));
+  const query = input.value.trim();
+  return createDataList(query)
 };
-
 input.oninput = sendData
