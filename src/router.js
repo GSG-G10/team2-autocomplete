@@ -1,19 +1,18 @@
-const fs = require("fs");
-const path = require("path");
-const autocompleteHandler = require("./handlers/autoCompleteHandler");
-const publicHandler = require("./handlers/publicHandler");
+const autocompleteHandler = require('./handlers/autoCompleteHandler');
+const publicHandler = require('./handlers/publicHandler');
+const homeHandler = require('./handlers/homeHandler');
 
 const router = (req, res) => {
   const endpoint = req.url;
-  if (endpoint === "/") {
+  if (endpoint === '/') {
     homeHandler(req, res);
-  } else if (endpoint.includes("search")) {
+  } else if (endpoint.includes('search')) {
     autocompleteHandler(req, res);
-  } else if (req.url.includes("public")) {
+  } else if (req.url.includes('public')) {
     publicHandler(req, res);
   } else {
     res.writeHead(404);
-    res.end("Page Not Found");
+    res.end('Page Not Found');
   }
 };
 
