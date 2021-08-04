@@ -9,18 +9,14 @@ const createDataList = (query) => {
         jsonOptions.forEach((elm) => {
           const createOption = document.createElement('option');
           dataListSection.appendChild(createOption);
-          createOption.value = `${elm.name},${elm.country}`;
+          createOption.value = elm.name;
         });
       } else {
         headerTtitle.textContent = "Couldn't load datalist options :(";
       }
     }
   };
-
-  // Update the placeholder text.
   headerTtitle.textContent = 'Loading options...!';
-
-  // Set up and make the request.
   request.open('GET', `/search?q=${query}`);
   request.send();
 };

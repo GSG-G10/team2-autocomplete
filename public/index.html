@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/style.css" />
-    <title>Mov-DB</title>
+    <title>City's-DB</title>
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <h1 class="header-title">Mov-DB</h1>
+        <h1 class="header-title">City's-DB</h1>
         <p class="header-title-description typewriter-text">
-          You Have Your Own Movie Data Base With Us !
+          You Have Your Own City Data Base With Us !
         </p>
       </div>
     </header>
@@ -24,16 +24,19 @@
             type="text"
             class="data-section-input"
             placeholder="Enter Name of City || Max Characters 16"
+            minlength="1"
             maxlength="16"
           />
           <datalist class="list" id="list"> </datalist>
         </section>
       </div>
-      <section class="gallery-section">
-        <!-- Here The result will show here -->
+      <section class="events-section">
+          <div class="container events-container">
+            </div>
+            
+          </div>
       </section>
     </main>
-    <script src="/public/index.js"></script>
     <script src="/public/xhr.js"></script>
     <script src="/public/datalist.js"></script>
     <script src="/public/dom.js"></script>
