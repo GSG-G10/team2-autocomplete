@@ -14,11 +14,10 @@ const publicHandler = (req, res) => {
     const file = req.url.split("/public")[1];
     const filePath = path.join(__dirname, "..", "..", "public", file);
     const ext = filePath.split(".")[1];
-    console.log("includes", filePath);
     fs.readFile(filePath, (err, file) => {
         if (err) {
             res.writeHead(500);
-            res.end("<h1>sth went wrong</h1>");
+            res.end("Server Error");
             return;
         }
         res.writeHead(200, {
