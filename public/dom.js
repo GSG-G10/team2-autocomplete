@@ -1,3 +1,4 @@
+  
 const input = document.querySelector('.data-section-input');
 const cardsContainer = document.querySelector('.cards-container')
 const sendData = () => {
