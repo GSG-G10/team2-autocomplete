@@ -12,10 +12,10 @@
   },
   "dependencies": {
     "cities.json": "file:names/cities.json",
-    "env2": "^2.2.2",
-    "supertest": "^6.1.4"
+    "env2": "^2.2.2"
   },
   "devDependencies": {
+    "supertest": "^6.1.4",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
