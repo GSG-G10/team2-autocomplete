@@ -16,7 +16,6 @@ const createDataList = (query) => {
       }
     }
   };
-  headerTtitle.textContent = 'Loading options...!';
   request.open('GET', `/search?q=${query}`);
   request.send();
 };
