@@ -58,29 +58,37 @@ body {
   justify-content: center;
 }
 .data-section {
-  border: 1px solid var(--main-text-color);
-  width: 45%;
+  width: 50%;
   display: flex;
   height: 3.2em;
-  border: 1px solid var(--background-color);
   border-radius: 1.5rem;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .data-section-input {
   background: rgba(252, 252, 252, 0.534);
-  width: 90%;
+  width: 70%;
   height: 100%;
   border: none;
   padding: 0 1rem;
+  border: 1px solid gray;
+  border-radius: 25px;
 }
 .data-section-input:focus {
   outline: none;
 }
 
 .submitButton {
-  width: 10%;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  font-weight: 700;
+  font-size:1rem;
+  width: 20%;
+  height:100%;
   border: none;
   cursor: pointer;
+  border-radius: 25px;
 }
 .list {
   width: 100%;
