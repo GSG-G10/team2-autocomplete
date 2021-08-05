@@ -1,5 +1,6 @@
-# team2-autocomplete
-
+# Anime Database
+> With this web app you have your offline database of animes and details about it,
+>  Enjoy with it :smile: 
 ## Team members
 * Nour Adawi
 * Muath Al Khatib
