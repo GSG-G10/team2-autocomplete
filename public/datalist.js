@@ -9,7 +9,7 @@ const createDataList = (query) => {
         jsonOptions.forEach((elm) => {
           const createOption = document.createElement('option');
           dataListSection.appendChild(createOption);
-          createOption.value = elm.name;
+          createOption.value = elm.title;
         });
       } else {
         headerTtitle.textContent = "Couldn't load datalist options :(";

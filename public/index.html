@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/style.css" />
-    <title>City's-DB</title>
+    <title>Anime Database</title>
   </head>
   <body>
     <header class="header">
       <div class="container header-container">
-        <h1 class="header-title">City's-DB</h1>
+        <h1 class="header-title">Anime Database</h1>
         <p class="header-title-description typewriter-text">
-          You Have Your Own City Data Base With Us !
+          You Have Your Own Anime Database With Us !
         </p>
       </div>
     </header>
@@ -23,22 +23,22 @@
             list="list"
             type="text"
             class="data-section-input"
-            placeholder="Enter Name of City || Max Characters 16"
-            minlength="1"
-            maxlength="16"
+            placeholder="Enter Anime Name"
+            required="required"
+            maxlength="50"
           />
+          <button class="submitButton" type="submit">Enter</button>
           <datalist class="list" id="list"> </datalist>
+          <button class="sub-button" type="submit"></button>
         </section>
       </div>
-      <section class="events-section">
-          <div class="container events-container">
-            </div>
-            
-          </div>
+      <section class="cards-section">
+        <div class="container cards-container"></div>
       </section>
     </main>
     <script src="/public/xhr.js"></script>
     <script src="/public/datalist.js"></script>
     <script src="/public/dom.js"></script>
+    <script src="/public/card.js"></script>
   </body>
 </html>
