@@ -21,7 +21,6 @@
     "eslint-plugin-import": "^2.23.4",
     "jest": "^27.0.6",
     "nodemon": "^2.0.12"
-    
   },
   "scripts": {
     "start": "node src/server.js",
