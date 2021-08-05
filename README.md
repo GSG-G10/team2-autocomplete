@@ -1,4 +1,4 @@
-# Anime Database
+# The All Anime
 > With this web app you have your offline database of animes and details about it,
 >  Enjoy with it :smile: 
 ## Team members
@@ -15,6 +15,7 @@
 * HTML
 * CSS
 * javascript
+* NodeJs
 * Heroku
 
 # Getting started

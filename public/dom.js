@@ -15,9 +15,13 @@ const creatCards = (array) => {
 
                 const cardImg = document.createElement('img');
                 cardImg.classList.add ('card-img')
-                cardImg.src = e.picture
                 createStick.appendChild(cardImg);
-
+                if(e.picture == 'https://cdn.myanimelist.net/images/qm_50.gif'){
+                  cardImg.src = 'https://images.hdqwalls.com/download/love-live-sunshine-404-error-4k-wo-3840x2160.jpg'
+                }else{
+                  cardImg.src = e.picture
+                }
+                
                 const cardMainData = document.createElement('div')
                 createStick.appendChild(cardMainData)
                 cardMainData.classList.add('card-main-data')
@@ -34,7 +38,12 @@ const creatCards = (array) => {
                 const createDate = document.createElement('span')
                 dataHeader.appendChild(createDate);
                 createDate.classList.add ('card-anime-date')
-                createDate.textContent = `Year : ${e.animeSeason.year}`
+                if(e.animeSeason.year == null){
+                  createDate.textContent = 'Year : --'
+                }else{
+                  createDate.textContent = `Year : ${e.animeSeason.year}`
+                }
+                
 
                 const createDescription = document.createElement('p')
                 cardMainData.appendChild(createDescription)
