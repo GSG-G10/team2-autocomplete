@@ -2,10 +2,9 @@ const fs = require('fs');
 const path = require('path');
 const queryString = require('querystring');
 
-const autocompleteHandler = (req, res) => {
-  const endpoint = req.url;
+const autocompleteHandler = ({url}, res) => {
   const animeFilePath = path.join(__dirname, '..', '/data','anime-database.json');
-  const searchText = endpoint.split('?')[1];
+  const searchText = url.split('?')[1];
   let { q } = queryString.parse(searchText);
   fs.readFile(animeFilePath, (err, data) => {
     if (err) {
