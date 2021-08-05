@@ -23,7 +23,6 @@
   margin: auto;
 }
 body {
-  background: url('./jonathan-roger-LY1eyQMFeyo-unsplash.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -63,73 +62,97 @@ body {
   width: 45%;
   display: flex;
   height: 3.2em;
-  border:1px solid var(--background-color);
+  border: 1px solid var(--background-color);
   border-radius: 1.5rem;
   overflow: hidden;
 }
 .data-section-input {
-  
-  background:rgba(252, 252, 252, 0.534);
-  width: 100%;
+  background: rgba(252, 252, 252, 0.534);
+  width: 90%;
   height: 100%;
   border: none;
   padding: 0 1rem;
 }
 .data-section-input:focus {
   outline: none;
-  
+}
+
+.submitButton {
+  width: 10%;
+  border: none;
+  cursor: pointer;
 }
 .list {
   width: 100%;
   height: 5vh;
   background-color: var(--main-text-color);
 }
-.events-section{
-  
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
 }
-.events-container{
-  display:flex;
-  flex-wrap: wrap; ;
-}
-.event-card{
-  border: 1px  solid var(--background-color);
-  width:28%;
-  height: 600px;
+.card-stick {
+  width: 28%;
+  height: 70vh;
   margin: 2.5%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 5px 5px 25px 10px #d6d6d6;
 }
-.event-img{
+
+.card-img {
   width: 100%;
   height: 65%;
+  object-fit: cover;
 }
-.event-title{
-  color: #444
+.card-stick:hover {
+  transition: 0.5s;
+  transform: scale(1.04);
+  cursor: pointer;
 }
-.event-description{
-  font-size: 1rem;
-  color: var(--shortcut-color);
-}
-.event-card-main-data{
-  padding: 0 2rem;
+.card-main-data {
+  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height:25%;
+  height: 25%;
 }
-.evente-more-description{
+.card-data-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-title {
+  width: 70%;
+  font-size: 1.2rem;
+  color: #444;
+  margin: 0 2.5% 0 0;
+}
+.card-anime-date {
+  margin: 0 2.5%;
+  width: 30%;
+}
+.card-description {
+  font-size: 1rem;
+  color: var(--shortcut-color);
+}
+.anime-tags {
+  color: var(--background-color);
+  font-size: 1.1rem;
+}
+
+.card-more-description {
   height: 10%;
   display: flex;
   align-items: center;
-  text-align: center;
+  padding: 0 1rem;
+  justify-content: space-between;
 }
-.event-date{
-  flex: 1;
-}
-.event-price{
-  flex: 1;
-}
+
 /* Animation Key frames */
 .typewriter-text {
   overflow: hidden;
@@ -143,11 +166,11 @@ body {
 }
 @keyframes typewriter {
   from {
-    width: 0;
+    width: 0%;
   }
 
   to {
-    width: 26em;
+    width: 38%;
   }
 }
 
@@ -158,5 +181,47 @@ body {
 
   to {
     border-right-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .card-stick {
+    width: 45%;
+    margin: 2.5%;
+  }
+  .header-title {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  .header-title-description {
+    display: none;
+  }
+  .data-section {
+    width: 90%;
+  }
+  .data-section-input {
+    height: 70%;
+    padding: 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-stick {
+    width: 90%;
+    margin: 5% 0;
+  }
+  .header-title {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .header-title-description {
+    display: none;
+  }
+  .data-section {
+    width: 90%;
+  }
+  .data-section-input {
+    height: 70%;
+    padding: 25px;
   }
 }
