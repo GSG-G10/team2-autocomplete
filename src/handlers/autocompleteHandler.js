@@ -16,7 +16,6 @@ const autocompleteHandler = (req, res) => {
       const jsonData = JSON.parse(data.toString('utf-8'));
       q = q.charAt(0).toUpperCase() + q.slice(1);
       const searchResult = jsonData.filter((item) => item.title.startsWith(q));
-      console.log(searchResult)
       const size = 30;
       const topResults = searchResult.slice(0, size).filter((i, idx) => idx < size);
       res.end(JSON.stringify(topResults));
