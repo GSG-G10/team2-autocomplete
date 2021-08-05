@@ -7,7 +7,7 @@
 * Eman Amassi
 
 ## Project Access
-* [view Demo](https://team2-auto-complete.herokuapp.com/)
+* [view Demo](https://team2autocompleter.herokuapp.com/)
 * [report bug](https://github.com/GSG-G10/team2-autocomplete/issues)
 * [request feature](https://github.com/GSG-G10/team2-autocomplete/issues)
 
